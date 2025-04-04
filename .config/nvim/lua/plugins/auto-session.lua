@@ -13,8 +13,21 @@ return{
             }
         }
 
-        vim.keymap.set("n", "<Leader>ls", require("auto-session.session-lens").search_session, {
+        vim.keymap.set("n", "<Leader>sl", require("auto-session.session-lens").search_session, {
+            desc = 'Load sessions',
             noremap = true,
+        })
+
+        vim.keymap.set("n", "<Leader>ss", "<cmd>SessionSave<CR>", {
+            desc = "Save current session",
+            noremap = true,
+            silent = true,
+        })
+
+        vim.keymap.set("n", "<Leader>sd", "<cmd>SessionDelete<CR>", {
+            desc = "Save current session",
+            noremap = true,
+            silent = true,
         })
     end,
 }

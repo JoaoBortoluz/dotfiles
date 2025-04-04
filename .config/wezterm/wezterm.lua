@@ -58,8 +58,10 @@ config.enable_wayland=false
 -- config.cursor_blink_rate = 500
 -- For example, changing the color scheme:
 config.color_scheme = "Catppuccin Macchiato"
-config.font = wezterm.font("JetBrains Mono Nerd Regular")
-config.font_size = 13.5
+config.font = wezterm.font("Fira Code Nerd Font")
+-- Fira Mono/Code Nerd Font - for no ligatures
+
+config.font_size = 14
 
 config.window_padding = {
   left = 6,
